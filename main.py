@@ -37,6 +37,7 @@ display = {
     9 : ["M", "R", "O", "B", "P", "S", "C", "H", "W", "A", "R", "T", "Z"],
     # 9 : ["M", "N", "I", "C", "K", "S", "B", "A", "K", "E", "R", "T", "Z"],
     # 9 : ["D", "E", "B", "O", "R", "A", "H", "H", "R", "E", "I", "D", "Z"],
+    # 9 : ["D", "E", "V", "A", "N", "A", "E", "W", "A", "L", "D", "D", "Z"],
 
 }
 
@@ -70,6 +71,8 @@ wordDict = {
     # 'baker' : [str(i) + ', ' + '9' for i in range(6, 11)],
     # 'deborah' : [str(i) + ', ' + '9' for i in range(0, 7)],
     # 'reid' : [str(i) + ', ' + '9' for i in range(8, 12)],
+    # 'evan' : [str(i) + ', ' + '9' for i in range(1, 5)],
+    # 'ewald' : [str(i) + ', ' + '9' for i in range(6, 11)],
 
 }
 
@@ -84,6 +87,7 @@ wordNames.extend(hourList)
 wordNames.extend(['rob', 'schwartz'])
 # wordNames.extend(['nick', 'baker'])
 # wordNames.extend(['deborah', 'reid'])
+# wordNames.extend(['evan', 'ewald'])
 
 displayItems = display.items()
 
@@ -148,7 +152,6 @@ class wordClock(App):
 
             if minApprox == 0:
                 time = [hourList[hr - 1], 'oClock']
-                # time = [hr]
                 return time
 
             elif minApprox == 1:
@@ -209,6 +212,7 @@ class wordClock(App):
         fullVariableList.extend(['rob', 'schwartz'])
         # fullVariableList.extend(['nick', 'baker'])
         # fullVariableList.extend(['deborah', 'reid'])
+        # fullVariableList.extend(['evan', 'ewald'])
         return fullVariableList
 
     def update_clock(self, *args):
