@@ -54,7 +54,7 @@ wordDict = {
     'to' : [str(i) + ', ' + '4' for i in range(4, 6)],
     'one' : [str(i) + ', ' + '4' for i in range(7, 10)],
     'two' : [str(i) + ', ' + '4' for i in range(10, 13)],
-    'three' : [str(i) + ', ' + '5' for i in range(1, 5)],
+    'three' : [str(i) + ', ' + '5' for i in range(0, 5)],
     'four' : [str(i) + ', ' + '5' for i in range(5, 9)],
     'five2' : [str(i) + ', ' + '5' for i in range(9, 13)],
     'six' : [str(i) + ', ' + '6' for i in range(0, 3)],
